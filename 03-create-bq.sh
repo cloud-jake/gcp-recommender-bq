@@ -4,6 +4,8 @@ source variables.inc
 
 SA_FULL="${SA_NAME}@${PROJECT_ID}.iam.gserviceaccount.com"
 
+gcloud config set project $PROJECT_ID
+
 # Enable BQ API
 gcloud services enable bigquery.googleapis.com bigquerydatatransfer.googleapis.com --project=${PROJECT_ID}
 
