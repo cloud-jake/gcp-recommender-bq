@@ -32,6 +32,10 @@ API_KEY=`gcloud beta services api-keys get-key-string ${API_UID} --format="value
 
 ## ACTION REQUIRED ##
 ## NEEDS OAUTH troubleshooting.... ##
+
+# Work Around - Do from Console Here:
+# https://cloud.google.com/bigquery/docs/reference/datatransfer/rest/v1/projects/enrollDataSources
+
 curl --request POST \
   'https://bigquerydatatransfer.googleapis.com/v1/projects/'${PROJECT_ID}':enrollDataSources?key='${API_KEY}'' \
   --header 'Authorization: Bearer ' $(gcloud auth print-identity-token) \
