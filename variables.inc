@@ -14,7 +14,8 @@ BILLING_ACCOUNT=
 
 # Project for Recommender exports to BQ
 # to create - must be lowercase and meet project naming requirements
-PROJECT_ID=
+# 6-30 char 12345678901234567890123456789012
+PROJECT_ID="recommender-${ORGANIZATION_ID}"
 
 # BQ Dataset name
 # change from default if required
