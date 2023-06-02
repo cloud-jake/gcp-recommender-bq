@@ -48,12 +48,14 @@ bq --location=$LOCATION --project_id=${PROJECT_ID} mk --dataset --default_table_
 #  --data '{"dataSourceIds":["6063d10f-0000-2c12-a706-f403045e6250"]}' \
 #  --compressed
 
+echo""
+echo""
 echo "Open the following URL to enable the Recommender Data Source:"
 echo "https://cloud.google.com/bigquery/docs/reference/datatransfer/rest/v1/projects/enrollDataSources?apix_params=%7B%22name%22%3A%22projects%2F${PROJECT_ID}%22%2C%22resource%22%3A%7B%22dataSourceIds%22%3A%5B%226063d10f-0000-2c12-a706-f403045e6250%22%5D%7D%7D"
 echo ""
-echo ""
+echo "Click Execute"
 
-wait 10
+sleep 10
 echo "After you have completed the step above"
 read -p "Press enter to continue"
 
